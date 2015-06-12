@@ -18,7 +18,7 @@ class Request(object):
            cookie_handler = CookieHandler()
 
         self.url = url
-        
+
         self.headers = headers or {}
         self.headers["User-Agent"] = self.headers.get("User-Agent", config.MOZILLA_USER_AGENT)
         self.headers["Accept-Charset"] = self.headers.get("Accept-Charset", "ISO-8859-1,utf-8;q=0.7,*;q=0.3")
